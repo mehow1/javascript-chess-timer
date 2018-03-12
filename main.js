@@ -128,7 +128,7 @@ function setUpGame(normalTime, timeAdded){
       blackRook.style.color = "black";
       whiteRookInterval = setInterval(function () {
         whiteRook.style.color = (whiteRook.style.color=="white") ? "#ffcf40":"white";
-      }, 800);
+      }, 1000);
     } else {
       clearInterval(whiteRookInterval);
       whiteRook.style.color = "white";
