@@ -1,0 +1,243 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ background-color: #fff;
+}
+
+.main-container{
+  display: grid;
+  grid-template-rows: 2fr 12fr 1fr;
+}
+
+.top-bar{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #fff;
+  height: 60px;
+  border-bottom-style: groove;
+  border-color: #320D00;
+  border-width: 1px;
+}
+
+.main-header{
+  align-self: center;
+  margin-left: 15%;
+  color: #320D00;
+}
+
+.info-nav{
+  display: grid;
+  align-self: center;
+  justify-self:center;
+  background-color: #320D00;
+  color: #fff;
+  width: 100px;
+  height: 60%;
+  text-align: center;
+  border-radius: 2px;
+  border-style: groove;
+  border-color: #320D00;
+  border-width: 2px;
+}
+
+.info-nav h2{
+  align-self: center;
+}
+
+.selection-wrapper{
+  display: grid;
+  height: 100%;
+}
+
+.game-selection{
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.game-selection-tab{
+  display: grid;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  height: 15vh;
+  text-align: center;
+  margin: 1vw;
+  border-style: groove;
+  border-color: #320D00;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #320D00;
+}
+
+.game-selection-tab:hover{
+  background-color: #320D00;
+  color: #fff;
+  box-shadow: none;
+}
+
+.game-selection-tab h2{
+  align-self: center;
+  font-size: 2.5vw;
+}
+
+.game-wrapper{
+  display: none;
+  margin: 0;
+}
+
+.timers{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-size: 2em;
+}
+
+.timers p{
+  font-size: 3em;
+}
+
+.timer-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.time-info{
+  align-self: center;
+}
+
+.time-displayer{
+  align-self: center;
+}
+
+.whites-timer{
+  background-color: #320D00;
+  color: #fff;
+}
+
+.change-sides-wrapper{
+  display: grid;
+  margin-top: 5vh;
+  height: 3rem;
+}
+
+.change-sides-button{
+  display: grid;
+  width: 20%;
+  height: 100%;
+  justify-self:center;
+  align-self: center;
+  border-style: groove;
+  border-width: 1px;
+  border-color: #320D00;
+  text-align: center;
+}
+
+.change-sides-button p{
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.tap-area-and-info{
+  text-align: center;
+}
+
+.press-space-info{
+  margin-top: 1em;
+}
+
+.game-buttons{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-button{
+  display: grid;
+  text-align: center;
+  align-self: center;
+  justify-self:center;
+  background-color: #320D00;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+}
+
+.game-button h3{
+  align-self: center;
+}
+
+footer{
+  background-color: #320D00;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  border-top-style: solid;
+  border-top-color: #320D00;
+  border-top-width: 2px;
+}
+
+.footer-content{
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+
+  .main-header{
+    margin-left: 15px;
+  }
+
+  .main-header h1{
+    font-size: 1.5em;
+  }
+
+  .info-nav{
+    width: 70px;
+    height: 40%;
+  }
+
+  .game-selection{
+    width: 95%;
+  }
+
+  .game-selection-tab{
+    width: 95%;
+    box-shadow: 1px 1px;
+  }
+
+  .game-selection-tab h2{
+    vertical-align: center;
+    font-size: 4vw;
+  }
+
+}
+
+@media (max-height: 400px) {
+
+    .main-container{
+      grid-template-rows: 1fr 3fr 1fr;
+    }
+
+    .game-selection-tab{
+      margin: 0 0;
+      height: 90%;
+      box-shadow: none none;
+    }
+
+    .game-selection-tab h2{
+      vertical-align: center;
+    }
+}
